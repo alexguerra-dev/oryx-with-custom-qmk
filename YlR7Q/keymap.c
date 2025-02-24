@@ -12,11 +12,11 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
     ALL_T(KC_EQUAL),KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_LEFT,                                        KC_RIGHT,       KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           ALL_T(KC_MINUS),
-    MT(MOD_LALT, KC_TAB),KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(1),                                          TG(1),          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLS,
+    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(1),                                          TG(1),          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLS,
     MT(MOD_LCTL, KC_ESCAPE),KC_A,           KC_S,           KC_D,           KC_F,           KC_G,                                                                           KC_H,           KC_J,           KC_K,           KC_L,           LT(2,KC_SCLN),  MT(MOD_RCTL, KC_QUOTE),
     SC_LSPO,        MT(MOD_LCTL, KC_Z),KC_X,           KC_C,           KC_V,           KC_B,           KC_MEH,                                         KC_HYPR,        KC_N,           KC_M,           KC_COMMA,       KC_DOT,         MT(MOD_RCTL, KC_SLASH),SC_RSPC,
     LT(1,KC_GRAVE), KC_QUOTE,       CW_TOGG,        KC_LEFT,        KC_RIGHT,                                                                                                       KC_DOWN,        KC_UP,          KC_LBRC,        KC_RBRC,        MO(1),
-                                                                                                    MT(MOD_LGUI, KC_ESCAPE),KC_LEFT_CTRL,   KC_RIGHT_CTRL,  MT(MOD_RGUI, KC_ESCAPE),
+                                                                                                    KC_LEFT_GUI,    KC_LEFT_CTRL,   KC_RIGHT_CTRL,  KC_RIGHT_GUI,
                                                                                                                     KC_RIGHT_ALT,   KC_RIGHT_ALT,
                                                                                     KC_BSPC,        KC_DELETE,      KC_END,         KC_PGDN,        KC_ENTER,       KC_SPACE
   ),
